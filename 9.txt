@@ -1,0 +1,58 @@
+Video tutorial : https://youtube.com/playlist?list=PLNR4S1rhq8a5l-yJVxt1nVivWQyiH61zP&si=0DEx_9hsGlzfb4c7
+
+
+Experiment 9: Introduction to Azure DevOps: Overview of Azure DevOps.
+
+Steps to create account and create project:
+
+Step 1: Sign Up for an Azure DevOps Account:
+
+(i) Open Your Web Browser:
+Navigate to the Azure DevOps website: https://dev.azure.com
+
+(ii) Sign In or Create a Microsoft Account:
+.If you already have a Microsoft account, click “Sign in”.
+
+.If you do not have a Microsoft account, click “Create one!” and follow the
+instructions to create a new Microsoft account.
+
+Step 2: Create an Azure DevOps Organization:
+
+(i) click on azure devops organization or search it on search bar
+
+(ii) click on my azure devops organizations
+
+(iii) Click on create a New Organization and click on continue
+
+(iv) Enter a unique name for your organization (e.g., YourCompanyoryournameDevOps or
+MyPersonalOrg).
+
+(v) Select a Region: india. (it is automatically shows india)
+
+(vi) Enter the characters you see
+
+(vii) Click “Continue” or “Create
+
+Step 3. Creating an Azure DevOps Project:
+
+1.Configure Your Project:
+
+.Project Name: Enter a descriptive name for your project.
+
+.Description: Optionally, provide a brief description.
+
+.Visibility:
+    -> Choose “Private”
+
+.Click “Create
+
+Step 4: Explore Your Project Dashboard:
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+ Video tutorial : https://youtube.com/playlist?list=PLNR4S1rhq8a5l-yJVxt1nVivWQyiH61zP&si=0DEx_9hsGlzfb4c7
+
+
+6)Commands to push an file from local repo to remote repo using git and GitHub.
+
+~ Pwd
+
+~ cd desktop
+
+~ mk dir gitproject
+
+~ cd gitproject
+
+~ git init
+
+~ vi file1.sh (press i to insert after writing press esc and :wq (to save and quit)
+
+~ ls
+
+~ git add 
+
+~ git commit -m “commit message”
+
+(To do congiguration we need to give our user name and email id of our
+git hub account)
+
+~ git config --global user.name”username” (Instead of ”username” Give your Credentials Ex:"Rahul_12")
+
+~ git config --global user.email”emailid” (Instead of ”emailid” Give your email id Ex:"rahulbhatia@gmail.com")
+
+~ git config --global –list (to check what configuration we have added)
+
+~ git remote add alias name url (to add repository url)
+
+~ git remote -v (to check which repo is mapped)
+
+~ git push alias name master 
+
+
+when we are executing for first time we will get and small window poped up asking pat(personal access tocken) or you can give your email and password
+
+-> Steps to generate PAT:
+
+(i) In your git hub account(Home Page):
+
+	1.Click this icon you will get settings
+	2.Go to settings
+	3.Select developer settings
+	4.Select personal access token…. Then classic…then generate token
+	5.Generate token and give life span for that token and save in notepad for future use
+

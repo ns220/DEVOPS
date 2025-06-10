@@ -1,0 +1,96 @@
+ Video tutorial : https://youtube.com/playlist?list=PLNR4S1rhq8a5l-yJVxt1nVivWQyiH61zP&si=0DEx_9hsGlzfb4c7
+
+
+4. Practical Exercise: Build and Run a Java Application with Maven, Migrate the Same Application to Gradle.
+
+Step 1: Open Command Prompt(Project folder):
+
+~ mkdir prg4
+~ cd prg4
+
+Step 2: Creating a Maven Project:
+
+~ mvn archetype:generate -DgroupId=com.example -DartifactId=maven-example -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+Step 3: Navigate to project folder:
+
+~ cd maven-example
+
+Step 4 Open Java Code (AppTest.java) File
+
+Open a file AppTest.java inside the src/test/java/com/example/ directory. (It will there in C drive : C:\Users\Admin\java......)
+After opening the AppTest.java copy the below code and paste it in that file then save it.
+
+package com.example;
+
+public class App {
+    public static void main(String[] args) {
+        System.out.println("Hello, Maven");
+        System.out.println("This is the simple realworld example....");
+
+        int a = 5;
+        int b = 10;
+        System.out.println("Sum of " + a + " and " + b + " is " + sum(a, b));
+    }
+
+    public static int sum(int x, int y) {
+        return x + y;
+    }
+}
+
+Step 4: Run the Project:
+
+Run the program with below command:
+
+~ mvn exec:java -Dexec.mainClass="com.example.App"
+
+Step 5: Migrate the Maven Project to Gradle:
+
+Initialize Gradle: Navigate to the project directory (gradle-example) and run:
+
+~ gradle init
+
+
+[
+ it will ask Found a Maven build. Generate a Gradle build from this : Type Yes
+
+Select build script DSL: Type 2 : Groovy
+
+Generate build using new APIs and behavior (some features may change in the next minor release) : Type No
+]
+
+
+-> Navigate the project folder and open build.gradle file then add the below code and save it: 
+
+plugins {
+    id 'java'
+}
+
+group = 'com.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.12'
+}
+
+task run(type: JavaExec) {
+    main = 'com.example.App'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+Step 5 Run the Gradle Project:
+
+Build the Project: In the project directory (gradle-example), run the below command to build the project:
+
+~ gradlew build
+
+Run the Application: Once the build is successful, run the application using below command:
+
+~ gradlew run
+
+
+

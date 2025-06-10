@@ -1,0 +1,59 @@
+ Video tutorial : https://youtube.com/playlist?list=PLNR4S1rhq8a5l-yJVxt1nVivWQyiH61zP&si=0DEx_9hsGlzfb4c7
+
+
+2) Working with Maven: Creating a Maven Project, Understanding the POM File, Dependency Management and Plugins.
+
+Step 1: Install the Java JDK : https://download.oracle.com/java/17/archive/jdk-17_windows-x64_bin.exe (sha256)
+
+Step 2: Open Command Prompt(Project folder):
+
+~ mkdir prg2
+~ cd prg2
+
+-> Creating a Maven Project
+
+Run this command:
+~ mvn archetype:generate -DgroupId=com.example -DartifactId=myapp -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+Step 3: Open Java Code (AppTest.java) File
+
+Open a file AppTest.java inside the src/test/java/com/example/ directory. (It will there in C drive : C:\Users\Admin\java......)
+After opening the AppTest.java copy the below code and paste it in that file then save it.
+
+package com.example;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+public class AppTest {
+
+    @Test
+    public void testAdd() {
+        App app = new App();
+        int result = app.add(2, 3);
+
+        System.out.println("Running test: 2 + 3 = " + result);
+
+        Assert.assertEquals(5, result);
+    }
+}
+
+Step 4: Building the Project
+
+Compile the Project : 
+ 
+~ mvn compile
+
+Run the Unit Tests
+
+~ mvn test
+
+Package the project into a JAR : 
+
+~ mvn package
+
+Run the application (using JAR) : 
+
+java -cp target/myapp-1.0-SNAPSHOT.jar com.example.App
+
+

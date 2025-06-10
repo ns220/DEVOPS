@@ -1,0 +1,41 @@
+ Video tutorial : https://youtube.com/playlist?list=PLNR4S1rhq8a5l-yJVxt1nVivWQyiH61zP&si=0DEx_9hsGlzfb4c7
+
+
+3. Working with Gradle: Setting Up a Gradle Project, Understanding Build Scripts (Groovy and Kotlin DSL), Dependency Management and Task Automation.
+
+Step 1: Open Command Prompt(Project folder):
+
+~ mkdir prg3
+~ cd prg3
+
+Step 2: Setting Up a Gradle Project
+
+~ gradle init --type java-application
+ 
+[Example to fill:
+
+Enter java version : 17
+
+Project Name: mygradleproject
+
+Select Application Structure : 1 (Select Choice 1)
+
+Slect Build Script : 2 (Select Choice 2)
+
+Select Text framework : 1 (Select Choice 1)
+
+Generate Build using new API's and behaviour : NO
+ 
+]
+
+Step 3: Run Gradle Commands
+
+To build the project:
+
+~ gradle build
+
+To run the project:
+
+~ gradle run
+
+~ gradle greet

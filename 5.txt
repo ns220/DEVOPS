@@ -1,0 +1,41 @@
+ Video tutorial : https://youtube.com/playlist?list=PLNR4S1rhq8a5l-yJVxt1nVivWQyiH61zP&si=0DEx_9hsGlzfb4c7
+
+
+5. Introduction to Jenkins: What is Jenkins?, Installing Jenkins on Local or Cloud Environment, Configuring Jenkins for First Use.
+
+Step 1. Installing Jenkins Locally
+
+Step-by-Step Guide (Window):
+
+Prerequisites:
+Ensure that Java (JDK) is installed on your system. Jenkins requires Java 21. If not then click here: https://download.oracle.com/java/24/latest/jdk-24_windows-x64_bin.exe
+
+You can check if Java is installed java -version
+
+-> Install Jenkins on Window System):
+
+(i) Download the Jenkins Windows installer from the : https://www.jenkins.io/download/thank-you-downloading-windows-installer-stable/
+
+(ii) Run the installer and follow the on-screen instructions. While installing choose login system: run service as LocalSystem (not recommended).
+
+(iii) you can configure you own port like I’m using port 3030 then click on test and next.
+
+(iv) After then change the directory and choose java jdk-21 path look like C:\Program Files\Java\jdk-21\.
+
+(v) After then click next, next and then it will ask permission click on yes and it will start installing.
+
+(vi) After successfully installed, Jenkins will be running on port 3030 (you can access it in your browser at http://localhost:8080) or http://localhost:3030.
+
+Step 2: Jenkins Setup in browser:
+
+(i) It will ask administrator password so you have to navigate the above highlighted path and open that initialAdminPassword in notepad or any software to see the password.
+
+(ii) Just copy that password and paste it and click on continue.
+
+(iii) it will ask to customize Jenkins so click on install suggested plugin it will automatically install all required plugin.
+
+(iv) After then create admin profile by filling all details then click on save and continue after then save and finish after then click on start using Jenkin.
+
+
+
+Guide: https://vtucircle.com/bcsl657d-program-5/

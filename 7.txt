@@ -1,0 +1,71 @@
+ Video tutorial : https://youtube.com/playlist?list=PLNR4S1rhq8a5l-yJVxt1nVivWQyiH61zP&si=0DEx_9hsGlzfb4c7
+
+
+7) ansible-playbook playbooks/apache-install.yml
+
+Steps to install Ubuntu:
+
+(i) Before Installing search for Windows features on or off : Search for Virtual machine platform and check it.
+							      Search for Windows Subsystem for Linux and check it.
+
+(ii) Open Microsoft store and search for Ubuntu select latest version and install.
+
+(iii) Open ubuntu and create username and password.
+
+
+Open Ubuntu and run:
+
+~ sudo apt update
+
+~ sudo apt upgrade -y
+
+~ sudo apt install ansible -y
+ 
+~ ansible --version
+
+Step 1: Create an Inventory File:
+
+1. Open your text editor to create a file called hosts.ini:
+
+~ nano hosts.ini
+
+and type or copy
+
+localhost ansible_connection=local
+
+Save the file by pressing Ctrl+O then Enter, and exit with Ctrl+X.
+
+
+Step 2: Create the Playbook File
+
+1. Open your text editor to create a file called setup.yml:
+
+~ nano setup.yml
+
+and type or copy
+
+- name: Basic Server Setup
+ hosts: local
+ become: true # Optional: if your tasks need root access
+ tasks:
+ - name: Example task
+ debug:
+ msg: "Hello, this is a basic setup"
+
+Save the file by pressing Ctrl+O then Enter, and exit with Ctrl+X.
+
+
+Step 3: Execute the Playbook:
+
+run the following command:
+
+~ ansible-playbook -i hosts.ini setup.yml
+
+		(or)
+
+~ ansible-playbook -i hosts.ini setup.yml --ask-become-pass
+
+
+
+
+ 

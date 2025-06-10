@@ -1,0 +1,61 @@
+Video tutorial : https://youtu.be/5EccHOLVgGo?si=9mTYbnWmDTXkQQpT
+
+
+1. Introduction to Maven and Gradle: Overview of Build Automation Tools, Key Differences Between Maven and Gradle, Installation and Setup.
+
+How to Install Maven:
+
+Download Maven:
+1.Go to the Maven https://dlcdn.apache.org/maven/maven-3/3.9.10/binaries/apache-maven-3.9.10-bin.zip  and download the latest binary ZIP file.
+
+2.Extract the ZIP File:
+Right-click the downloaded ZIP file and select Extract All… or use any extraction tool like WinRAR or 7-Zip.
+
+3.Move the Folder:
+After extraction, move the extracted Maven folder (usually named apache-maven-x.x.x) to a convenient directory like C:\Program Files\.
+
+4.Navigate to the bin Folder:
+Open the Maven folder, then navigate to the bin folder inside.
+Copy the path from the File Explorer address bar(e.g., C:\Program Files\apache-maven-x.x.x\bin).
+
+5.Set Environment Variables:
+Open the Start Menu, search for Environment Variables, and select Edit the system environment variables.
+Click Environment Variables.
+Under System Variables:
+Find the path, double click on it and click New.
+Paste the full path to the bin folder of your Maven directory (e.g., C:\Program Files\apache-maven-x.x.x\bin).
+
+6.Save the Changes:
+Click OK to close the windows and save your changes.
+
+7.Verify the Installation:
+Open Command Prompt and run: mvn -v If Maven is correctly installed, it will display the version number.
+
+
+How to install Gradle
+
+1.Download Gradle:
+Visit the Gradle https://gradle.org/next-steps/?version=8.14.2&format=bin and download the latest binary ZIP file.
+
+2.Extract the ZIP File:
+Right-click the downloaded ZIP file and select Extract All… or use any extraction tool like WinRAR or 7-Zip.
+
+3.Move the Folder:
+After extraction, move the extracted Gradle folder (usually named gradle-x.x.x) to a convenient directory like C:\Program Files\.
+
+4.Navigate to the bin Folder:
+Open the Gradle folder, then navigate to the bin folder inside.
+Copy the path from the File Explorer address bar (e.g., C:\Program Files\gradle-x.x\bin).
+
+5.Set Environment Variables:
+Open the Start Menu, search for Environment Variables, and select Edit the system environment variables.
+Click Environment Variables.
+Under System Variables:
+Find the path, double click on it and click New.
+Paste the full path to the bin folder of your Gradle directory (e.g., C:\Program Files\gradle-x.x.x\bin).
+
+6.Save the Changes:
+Click OK to close the windows and save your changes.
+
+7.Verify the Installation:
+Open a terminal or Command Prompt and run: gradle -v If it shows the Gradle version, the setup is complete.

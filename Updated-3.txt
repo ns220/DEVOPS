@@ -1,0 +1,149 @@
+BCSL657D Program 3
+
+3. Working with Gradle: Setting Up a Gradle Project, Understanding Build Scripts (Groovy and Kotlin DSL)
+
+
+
+
+
+Step 1: Create Your Project Folder
+	1.	Open the Command Prompt or Terminal.
+	2.	Create and Navigate to a New Folder:
+
+
+~> mkdir MyGradleProject
+~> cd MyGradleProject
+
+
+
+Step 2: Initialize the Gradle Project
+
+Run the following command to initialize a Java application project:
+
+
+~> gradle init --type java-application
+
+During initialization, Gradle will prompt you with questions such as:
+	•	Which build script DSL to use: Groovy (creates build.gradle) or Kotlin (creates build.gradle.kts).
+	•	The project type, test framework, etc.
+
+
+
+Step 3: Explore the Generated Project Structure
+
+After running the init command, your project folder should contain files similar to this:
+
+
+MyGradleProject/
+├── build.gradle          // (if you selected Groovy DSL) or build.gradle.kts (if Kotlin DSL)
+├── settings.gradle       // Project settings file
+├── gradle/               // Gradle wrapper files (if included)
+├── gradlew               // Unix Gradle wrapper script
+├── gradlew.bat           // Windows Gradle wrapper script
+└── src/
+    ├── main/
+    │   └── java/
+    │       └── App.java  // Your main Java file
+    └── test/
+        └── java/
+            └── AppTest.java  // A sample test file
+
+
+
+
+
+
+Example for Groovy DSL (build.gradle)
+
+Open the file build.gradle (located in the project root) in your favorite text editor. It might look like this:
+
+
+plugins {
+    id 'application'
+    id 'java'
+}
+
+application {
+    mainClassName = 'App'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+    testImplementation 'junit:junit:4.13.2'
+}
+
+// A custom task example:
+tasks.register('greet') {
+    doLast {
+        println 'Hello, this is my custom Gradle task!'
+    }
+}
+
+
+
+
+Example for Kotlin DSL (build.gradle.kts)
+
+If you chose Kotlin DSL, open build.gradle.kts. It might look like this
+
+
+plugins {
+    application
+    java
+}
+
+application {
+    mainClass.set("App")
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation("org.apache.commons:commons-lang3:3.12.0")
+    testImplementation("junit:junit:4.13.2")
+}
+
+// A custom task example:
+tasks.register("greet") {
+    doLast {
+        println("Hello, this is my custom Gradle task!")
+    }
+}
+
+Steps:
+	1.	Open the appropriate build script file.
+	2.	Add the custom task code (as shown above) at the end of the file.
+	3.	Save the file.
+
+
+
+Step 5: Build and Run Your Project
+	1.	Build the Project:
+In your command prompt, ensure you’re in your project directory and run:
+
+
+~>gradle build
+This compiles your source code, runs tests, and packages your application.
+
+
+Run the Application:
+To run your Java application (using the main class defined in your build script), execute:
+
+
+~> gradle run
+
+
+Execute the Custom Task:
+If you added the custom task (named greet), run:
+
+~> gradle greet
+
+This will print the custom greeting message to the console.
+
+Building and running the project ensures that your code is compiled correctly and that the configurations in your build script are applied. Custom tasks help automate additional actions during your build process.

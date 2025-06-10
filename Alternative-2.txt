@@ -1,0 +1,22 @@
+mvn archetype:generate -DgroupId=com.example -DartifactId=myapp -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+Compile the Project
+
+mvn compile
+
+Run the Unit Tests
+mvn test
+
+
+Package the project into a JAR
+mvn package
+
+Run the application (using JAR)
+java -cp target/myapp-1.0-SNAPSHOT.jar com.example.App
+
+
+4th--notepad
+task run(type: JavaExec) {
+	main='com.example.App'
+	classpath=sourceSets.main.runtimeClasspath
+}

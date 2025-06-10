@@ -54,6 +54,6 @@ Package the project into a JAR :
 
 Run the application (using JAR) : 
 
-java -cp target/myapp-1.0-SNAPSHOT.jar com.example.App
+~ java -cp target/myapp-1.0-SNAPSHOT.jar com.example.App
 
 

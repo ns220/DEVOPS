@@ -52,6 +52,16 @@ and type or copy
  debug:
  msg: "Hello, this is a basic setup"
 
+		(OR)
+- name: Basic Server Setup
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Example task
+      debug:
+        msg: "This is a sample task"
+
 Save the file by pressing Ctrl+O then Enter, and exit with Ctrl+X.
 
 
